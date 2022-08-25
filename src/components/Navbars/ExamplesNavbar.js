@@ -20,6 +20,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 // nodejs library that concatenates strings
 import classnames from "classnames";
+import logoLight from 'assets/gcc-horiz-light.svg';
+import logoDark from 'assets/gcc-horiz-dark.svg';
 
 // reactstrap components
 import {
@@ -71,15 +73,30 @@ function ExamplesNavbar() {
     >
       <Container>
         <div className="navbar-translate">
-          <NavbarBrand
+          <NavbarBrand data-placement="bottom"
+            to="/welcome"
+            target="_blank"
+            title="GCC Sydney"
+            tag={Link}>
+            <img
+              alt="logo"
+              src={navbarColor===""? logoLight: logoDark}
+              style={{
+                height: 160,
+                width: 160
+              }}
+            />
+          </NavbarBrand>
+
+          {/* <NavbarBrand
             data-placement="bottom"
             to="/index"
             target="_blank"
             title="Coded by Creative Tim"
             tag={Link}
           >
-            Paper Kit 2
-          </NavbarBrand>
+            GCC SYDNEY
+          </NavbarBrand> */}
           <button
             aria-expanded={navbarCollapse}
             className={classnames("navbar-toggler navbar-toggler", {
@@ -99,44 +116,9 @@ function ExamplesNavbar() {
         >
           <Nav navbar>
             <NavItem>
-              <NavLink to="/index" tag={Link}>
-                <i className="nc-icon nc-layout-11" /> Components
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-examples-navbar"
-                target="_blank"
-              >
-                <i className="nc-icon nc-book-bookmark" /> Documentation
-              </NavLink>
-            </NavItem>
-            <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://twitter.com/CreativeTim?ref=creativetim"
-                target="_blank"
-                title="Follow us on Twitter"
-              >
-                <i className="fa fa-twitter" />
-                <p className="d-lg-none">Twitter</p>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="https://www.facebook.com/CreativeTim?ref=creativetim"
-                target="_blank"
-                title="Like us on Facebook"
-              >
-                <i className="fa fa-facebook-square" />
-                <p className="d-lg-none">Facebook</p>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+                href="https://www.instagram.com/gccsydney"
                 target="_blank"
                 title="Follow us on Instagram"
               >
@@ -147,12 +129,34 @@ function ExamplesNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.github.com/CreativeTimOfficial?ref=creativetim"
+                href="https://www.youtube.com/gccsydney"
                 target="_blank"
-                title="Star on GitHub"
+                title="Follow us on Twitter"
               >
-                <i className="fa fa-github" />
-                <p className="d-lg-none">GitHub</p>
+                <i className="fa fa-youtube-play" />
+                <p className="d-lg-none">Youtube</p>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                data-placement="bottom"
+                href="https://www.facebook.com/gccsydneyau"
+                target="_blank"
+                title="Like us on Facebook"
+              >
+                <i className="fa fa-facebook" />
+                <p className="d-lg-none">Facebook</p>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                data-placement="bottom"
+                href="info@gccsydney.org"
+                target="_blank"
+                title="Send Email"
+              >
+                <i className="fa fa-envelope-o" />
+                <p className="d-lg-none">Mail</p>
               </NavLink>
             </NavItem>
             <NavItem>
@@ -162,7 +166,7 @@ function ExamplesNavbar() {
                 href="https://www.creative-tim.com/product/paper-kit-pro-react?ref=pkr-examples-navbar"
                 target="_blank"
               >
-                <i className="nc-icon nc-spaceship"></i> Upgrade to Pro
+                <i className="nc-icon nc-spaceship"></i> GIVE
               </Button>
             </NavItem>
           </Nav>

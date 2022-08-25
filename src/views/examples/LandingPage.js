@@ -57,13 +57,13 @@ function LandingPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
-                <h2 className="title">Let's talk product</h2>
+                <h2 className="title">OUR STORY</h2>
                 <h5 className="description">
-                  This is the paragraph where you can write more details about
-                  your product. Keep you user engaged by providing meaningful
-                  information. Remember that by this time, the user is curious,
-                  otherwise he wouldn't scroll to get here. Add a button if you
-                  want the user to see more.
+                  Grace Community Chapel Sydney was birthed from years of praying and
+                  waiting. After visiting Sydney several times over the years, God was
+                  making it clear that there was a need for more disciple-making
+                  churches that was gospel centered, Spirit-filled, and theologically
+                  sound.
                 </h5>
                 <br />
                 <Button
@@ -79,69 +79,37 @@ function LandingPage() {
             <br />
             <br />
             <Row>
-              <Col md="3">
+              <Col md="6">
                 <div className="info">
                   <div className="icon icon-info">
                     <i className="nc-icon nc-album-2" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Beautiful Gallery</h4>
+                    <h4 className="info-title">Grace Community Chapel of NJ</h4>
                     <p className="description">
-                      Spend your time generating new ideas. You don't have to
-                      think of implementing.
+                      GCCNJ is the sending church of GCC Sydney. We envision a continual
+                      partnership with GCCNJ to further accomplish the Great Commission
+                      to make disciples of all nations.
                     </p>
-                    <Button className="btn-link" color="info" href="#pablo">
+                    <Button className="btn-link" color="info" href="https://gccnj.org/">
                       See more
                     </Button>
                   </div>
                 </div>
               </Col>
-              <Col md="3">
+              <Col md="6">
                 <div className="info">
                   <div className="icon icon-info">
                     <i className="nc-icon nc-bulb-63" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">New Ideas</h4>
+                    <h4 className="info-title">Christian Reformed Church of North America</h4>
                     <p>
-                      Larger, yet dramatically thinner. More powerful, but
-                      remarkably power efficient.
+                      GCC Sydney is affiliated with the CRCNA denomination which will
+                      provide denominational guidance and wisdom as well as
+                      accountability for the church.
                     </p>
-                    <Button className="btn-link" color="info" href="#pablo">
-                      See more
-                    </Button>
-                  </div>
-                </div>
-              </Col>
-              <Col md="3">
-                <div className="info">
-                  <div className="icon icon-info">
-                    <i className="nc-icon nc-chart-bar-32" />
-                  </div>
-                  <div className="description">
-                    <h4 className="info-title">Statistics</h4>
-                    <p>
-                      Choose from a veriety of many colors resembling sugar
-                      paper pastels.
-                    </p>
-                    <Button className="btn-link" color="info" href="#pablo">
-                      See more
-                    </Button>
-                  </div>
-                </div>
-              </Col>
-              <Col md="3">
-                <div className="info">
-                  <div className="icon icon-info">
-                    <i className="nc-icon nc-sun-fog-29" />
-                  </div>
-                  <div className="description">
-                    <h4 className="info-title">Delightful design</h4>
-                    <p>
-                      Find unique and handmade delightful designs related items
-                      directly from our sellers.
-                    </p>
-                    <Button className="btn-link" color="info" href="#pablo">
+                    <Button className="btn-link" color="info" href="https://crcna.org/">
                       See more
                     </Button>
                   </div>
@@ -152,133 +120,44 @@ function LandingPage() {
         </div>
         <div className="section section-dark text-center">
           <Container>
-            <h2 className="title">Let's talk about us</h2>
+            <h2 className="title">LEADERSHIP</h2>
             <Row>
-              <Col md="4">
+              <Col md="12">
                 <Card className="card-profile card-plain">
                   <div className="card-avatar">
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
-                        src={require("assets/img/faces/clem-onojeghuo-3.jpg")}
+                        src={require("assets/img/paul_nam.png")}
                       />
                     </a>
                   </div>
                   <CardBody>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
-                        <CardTitle tag="h4">Henry Ford</CardTitle>
-                        <h6 className="card-category">Product Manager</h6>
+                        <CardTitle tag="h4">Rev. Paul Nam</CardTitle>
+                        <h6 className="card-category">Leader</h6>
                       </div>
                     </a>
                     <p className="card-description text-center">
-                      Teamwork is so important that it is virtually impossible
-                      for you to reach the heights of your capabilities or make
-                      the money that you want without becoming very good at it.
-                    </p>
-                  </CardBody>
-                  <CardFooter className="text-center">
-                    <Button
-                      className="btn-just-icon btn-neutral"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-google-plus" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                  </CardFooter>
-                </Card>
-              </Col>
-              <Col md="4">
-                <Card className="card-profile card-plain">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={require("assets/img/faces/joe-gardner-2.jpg")}
-                      />
-                    </a>
-                  </div>
-                  <CardBody>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <div className="author">
-                        <CardTitle tag="h4">Sophie West</CardTitle>
-                        <h6 className="card-category">Designer</h6>
-                      </div>
-                    </a>
-                    <p className="card-description text-center">
-                      A group becomes a team when each member is sure enough of
-                      himself and his contribution to praise the skill of the
-                      others. No one can whistle a symphony. It takes an
-                      orchestra to play it.
-                    </p>
-                  </CardBody>
-                  <CardFooter className="text-center">
-                    <Button
-                      className="btn-just-icon btn-neutral"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-google-plus" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                  </CardFooter>
-                </Card>
-              </Col>
-              <Col md="4">
-                <Card className="card-profile card-plain">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={require("assets/img/faces/erik-lucatero-2.jpg")}
-                      />
-                    </a>
-                  </div>
-                  <CardBody>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <div className="author">
-                        <CardTitle tag="h4">Robert Orben</CardTitle>
-                        <h6 className="card-category">Developer</h6>
-                      </div>
-                    </a>
-                    <p className="card-description text-center">
-                      The strength of the team is each individual member. The
-                      strength of each member is the team. If you can laugh
-                      together, you can work together, silence isn’t golden,
-                      it’s deadly.
+                      Pastor Paul Nam is the founder and Lead Pastor of Grace Community
+                      Chapel Sydney. Pastor Paul is a graduate of The George Washington
+                      University (B.A.) and The Southwestern Baptist Theological
+                      Seminary (M.Div). He is currently pursuing a Doctorate of Ministry
+                      in Discipleship from Talbot School of Theology. He also holds a
+                      Foundations of Biblical Counseling Certificate from Christian
+                      Counseling &amp; Educational Foundation (CCEF). He is ordained in
+                      the Christian Reformed Church of North America (CRCNA). Pastor
+                      Paul has served in ministry for the past 15 years and most
+                      recently served as an associate pastor at Grace Community Chapel
+                      of NJ for the past 9 years. His greatest passion is for the church
+                      to raise bold, committed, and passionate disciples of Jesus Christ
+                      that will make a great impact for the Kingdom of God. His heart is
+                      for people to fall into a deep, love relationship with Jesus.
+                      Pastor Paul is a devoted husband to Deborah, and a grateful father
+                      to Karis, Kayla, Moses, and Matthew. He loves to eat, work out,
+                      and enjoys to play and watch sports. He looks forward to learning
+                      rugby, and picking up the Australian accent.
                     </p>
                   </CardBody>
                   <CardFooter className="text-center">

@@ -43,7 +43,7 @@ root.render(
         render={(props) => <NucleoIcons {...props} />}
       />
       <Route
-        path="/landing-page"
+        path="/welcome"
         render={(props) => <LandingPage {...props} />}
       />
       <Route
@@ -54,7 +54,7 @@ root.render(
         path="/register-page"
         render={(props) => <RegisterPage {...props} />}
       />
-      <Redirect to="/index" />
+      <Redirect to="/welcome" />
     </Switch>
   </BrowserRouter>
 );

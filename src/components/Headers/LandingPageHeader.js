@@ -53,8 +53,8 @@ function LandingPageHeader() {
         <div className="filter" />
         <Container>
           <div className="motto text-center">
-            <h1>Example page</h1>
-            <h3>Start designing your landing page here.</h3>
+            <h1>Grace Community Chapel Sydney</h1>
+            <h3>2022 Laying The Foundation 1 Corinthians 3:11</h3>
             <br />
             <Button
               href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
@@ -65,9 +65,6 @@ function LandingPageHeader() {
             >
               <i className="fa fa-play" />
               Watch video
-            </Button>
-            <Button className="btn-round" color="neutral" type="button" outline>
-              Download
             </Button>
           </div>
         </Container>
