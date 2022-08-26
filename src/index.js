@@ -1,21 +1,3 @@
-/*!
-
-=========================================================
-* Paper Kit React - v1.3.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-kit-react
-
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
@@ -49,7 +31,7 @@ root.render(
         render={(props) => <AboutPage {...props} />}
       />
 
-      <Route path="/index" render={(props) => <Index {...props} />} />
+      {/* <Route path="/index" render={(props) => <Index {...props} />} />
       <Route
         path="/nucleo-icons"
         render={(props) => <NucleoIcons {...props} />}
@@ -61,7 +43,7 @@ root.render(
       <Route
         path="/register-page"
         render={(props) => <RegisterPage {...props} />}
-      />
+      /> */}
       <Redirect to="/welcome" />
     </Switch>
   </BrowserRouter>
