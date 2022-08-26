@@ -9,10 +9,10 @@ import "assets/demo/demo.css?v=1.3.0";
 // pages
 import LandingPage from "views/examples/LandingPage.js";
 import AboutPage from "views/examples/AboutPage";
-import Index from "views/Index.js";
-import NucleoIcons from "views/NucleoIcons.js";
-import ProfilePage from "views/examples/ProfilePage.js";
-import RegisterPage from "views/examples/RegisterPage.js";
+// import Index from "views/Index.js";
+// import NucleoIcons from "views/NucleoIcons.js";
+// import ProfilePage from "views/examples/ProfilePage.js";
+// import RegisterPage from "views/examples/RegisterPage.js";
 
 // others
 
