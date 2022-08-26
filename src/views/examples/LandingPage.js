@@ -185,7 +185,7 @@ function LandingPage() {
                       rugby, and picking up the Australian accent.
                     </p>
                   </CardBody>
-                  <CardFooter className="text-center">
+                  {/* <CardFooter className="text-center">
                     <Button
                       className="btn-just-icon btn-neutral"
                       color="link"
@@ -210,7 +210,7 @@ function LandingPage() {
                     >
                       <i className="fa fa-linkedin" />
                     </Button>
-                  </CardFooter>
+                  </CardFooter> */}
                 </Card>
               </Col>
             </Row>
