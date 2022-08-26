@@ -69,8 +69,5 @@
     "theme",
     "react-template",
     "react-theme"
-  ],
-  "overrides": {
-    "autoprefixer": "10.4.5"
-  }
+  ]
 }

@@ -42,9 +42,7 @@ function DemoFooter() {
               © {new Date().getFullYear()}, made with{" "}
               <a
                 href="https://www.ouvall.com/"
-                target="_blank" rel="noreferrer"
-                rel="noreferrer"
-              >
+                target="_blank" rel="noreferrer">
                   Ouvall
               </a>
             </span>

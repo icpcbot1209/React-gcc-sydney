@@ -9,17 +9,14 @@ import "assets/demo/demo.css?v=1.3.0";
 // pages
 import LandingPage from "views/examples/LandingPage.js";
 import AboutPage from "views/examples/AboutPage";
-// import Index from "views/Index.js";
-// import NucleoIcons from "views/NucleoIcons.js";
-// import ProfilePage from "views/examples/ProfilePage.js";
-// import RegisterPage from "views/examples/RegisterPage.js";
-
-// others
+import BelievePage from "views/examples/BelievePage";
+import ScrollToTop from "ScrollToTop";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <BrowserRouter>
+    <ScrollToTop />
     <Switch>
       <Route
         path="/welcome"
@@ -31,19 +28,10 @@ root.render(
         render={(props) => <AboutPage {...props} />}
       />
 
-      {/* <Route path="/index" render={(props) => <Index {...props} />} />
       <Route
-        path="/nucleo-icons"
-        render={(props) => <NucleoIcons {...props} />}
+        path="/believe"
+        render={(props) => <BelievePage {...props} />}
       />
-      <Route
-        path="/profile-page"
-        render={(props) => <ProfilePage {...props} />}
-      />
-      <Route
-        path="/register-page"
-        render={(props) => <RegisterPage {...props} />}
-      /> */}
       <Redirect to="/welcome" />
     </Switch>
   </BrowserRouter>

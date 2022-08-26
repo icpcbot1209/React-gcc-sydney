@@ -61,9 +61,7 @@ function IndexHeader() {
           Designed and coded by{" "}
           <a
             href="https://www.creative-tim.com?ref=pkr-index-page"
-            target="_blank" rel="noreferrer"
-            rel="noreferrer"
-          >
+            target="_blank" rel="noreferrer">
             <img
               alt="..."
               className="creative-tim-logo"

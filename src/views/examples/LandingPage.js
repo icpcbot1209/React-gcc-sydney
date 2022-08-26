@@ -16,7 +16,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React, { useEffect } from "react";
 // reactstrap components
 import {
   Button,
@@ -33,7 +33,7 @@ import {
   Row,
   Col,
 } from "reactstrap";
-import { useHistory } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
@@ -43,6 +43,7 @@ import { MeetingSection } from "./MeetingSection";
 
 function LandingPage() {
   const history = useHistory();
+  const { pathname, hash, key } = useLocation();
 
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
@@ -51,6 +52,21 @@ function LandingPage() {
       document.body.classList.remove("profile-page");
     };
   });
+
+  useEffect(() => {
+    if (hash === '') {
+    }
+    else {
+      setTimeout(() => {
+        const id = hash.replace('#', '');
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({behavior: 'smooth'});
+        }
+      }, 300);
+    }
+  }, [pathname, hash, key]); // do this on route change
+
 
   const gotoUrl = (url) => {
     history.push(url);
@@ -82,7 +98,6 @@ function LandingPage() {
                     >
                       See Details
                     </Button>
-
               </Col>
             </Row>
             <br />
@@ -127,7 +142,8 @@ function LandingPage() {
             </Row>
           </Container>
         </div>
-        <div className="section section-dark text-center">
+        <div id="leadership" name='leadership' style={{height: 100}}></div>
+        <div className="section section-dark text-center" >
           <Container>
             <h2 className="title">LEADERSHIP</h2>
             <Row>
@@ -209,7 +225,7 @@ function LandingPage() {
               <Col className="ml-auto mr-auto" md="8">
                 <h2 className="text-center">Keep in touch?</h2>
 
-                <Form className="contact-form" action="mailto:info@gccsydney.org" method="post" enctype="text/plain">
+                <Form className="contact-form" action="mailto:info@gccsydney.org" method="post" encType="text/plain">
                   <Row>
                     <Col md="6">
                       <label>Name</label>

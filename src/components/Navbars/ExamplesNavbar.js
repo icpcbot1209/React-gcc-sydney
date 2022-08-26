@@ -17,7 +17,7 @@
 
 */
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useHistory } from "react-router-dom";
 // nodejs library that concatenates strings
 import classnames from "classnames";
 import logoLight from 'assets/gcc-horiz-light.svg';
@@ -38,9 +38,9 @@ import { GiveModal } from "views/modals/GiveModal";
 
 function ExamplesNavbar() {
   const [giveModal, setGiveModal] = React.useState(false);
-
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
+  const history = useHistory();
 
   const toggleNavbarCollapse = () => {
     setNavbarCollapse(!navbarCollapse);
@@ -68,6 +68,7 @@ function ExamplesNavbar() {
       window.removeEventListener("scroll", updateNavbarColor);
     };
   });
+
   return (
     <Navbar
       className={classnames("fixed-top", navbarColor)}
@@ -108,11 +109,22 @@ function ExamplesNavbar() {
           isOpen={navbarCollapse}
         >
           <Nav navbar>
-            <NavItem>
+          <NavItem>
               <NavLink to="/about" tag={Link}>
                 About
               </NavLink>
+            </NavItem>  
+            <NavItem>
+              <NavLink to="/believe" tag={Link}>
+                What We Believe
+              </NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink to="/welcome#leadership" tag={Link}>
+                Leadership
+              </NavLink>
+            </NavItem>
+            
             <NavItem>
               <NavLink
                 data-placement="bottom"
