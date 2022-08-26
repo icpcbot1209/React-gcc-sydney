@@ -17,7 +17,6 @@
 
 */
 import React from "react";
-
 // reactstrap components
 import {
   Button,
@@ -32,15 +31,19 @@ import {
   InputGroup,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
+import { useHistory } from "react-router-dom";
 
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DemoFooter from "components/Footers/DemoFooter.js";
+import { MeetingSection } from "./MeetingSection";
 
 function LandingPage() {
+  const history = useHistory();
+
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
     document.body.classList.add("profile-page");
@@ -48,6 +51,11 @@ function LandingPage() {
       document.body.classList.remove("profile-page");
     };
   });
+
+  const gotoUrl = (url) => {
+    history.push(url);
+  };
+
   return (
     <>
       <ExamplesNavbar />
@@ -66,14 +74,15 @@ function LandingPage() {
                   sound.
                 </h5>
                 <br />
-                <Button
-                  className="btn-round"
-                  color="info"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  See Details
-                </Button>
+
+                    <Button
+                      className="btn-round"
+                      color="info"
+                      onClick={(e)=>gotoUrl('/about')}
+                    >
+                      See Details
+                    </Button>
+
               </Col>
             </Row>
             <br />
@@ -91,7 +100,7 @@ function LandingPage() {
                       partnership with GCCNJ to further accomplish the Great Commission
                       to make disciples of all nations.
                     </p>
-                    <Button className="btn-link" color="info" href="https://gccnj.org/">
+                    <Button className="btn-link" target="_blank" color="info" href="https://gccnj.org/">
                       See more
                     </Button>
                   </div>
@@ -109,7 +118,7 @@ function LandingPage() {
                       provide denominational guidance and wisdom as well as
                       accountability for the church.
                     </p>
-                    <Button className="btn-link" color="info" href="https://crcna.org/">
+                    <Button className="btn-link" target="_blank" color="info" href="https://crcna.org/">
                       See more
                     </Button>
                   </div>
@@ -191,6 +200,9 @@ function LandingPage() {
             </Row>
           </Container>
         </div>
+
+        <MeetingSection />
+
         <div className="section landing-section">
           <Container>
             <Row>

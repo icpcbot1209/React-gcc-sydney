@@ -30,35 +30,30 @@ function DemoFooter() {
           <nav className="footer-nav">
             <ul>
               <li>
-                <a
-                  href="https://www.creative-tim.com?ref=pkr-footer"
-                  target="_blank"
-                >
-                  Creative Tim
-                </a>
+                  <i className="fa fa-phone" />+61 0459 590 082
               </li>
               <li>
-                <a
-                  href="http://blog.creative-tim.com/?ref=pkr-footer"
-                  target="_blank"
-                >
-                  Blog
-                </a>
+                  <i className="fa fa-envelope-o" /> info@gccsydney.org
               </li>
-              <li>
+              {/* <li>
                 <a
                   href="https://www.creative-tim.com/license?ref=pkr-footer"
                   target="_blank"
                 >
                   Licenses
                 </a>
-              </li>
+              </li> */}
             </ul>
           </nav>
           <div className="credits ml-auto">
             <span className="copyright">
               © {new Date().getFullYear()}, made with{" "}
-              <i className="fa fa-heart heart" /> by Creative Tim
+              <a
+                href="https://www.ouvall.com/"
+                target="_blank"
+              >
+                  Ouvall
+              </a>
             </span>
           </div>
         </Row>

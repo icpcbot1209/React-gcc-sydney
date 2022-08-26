@@ -75,28 +75,18 @@ function ExamplesNavbar() {
         <div className="navbar-translate">
           <NavbarBrand data-placement="bottom"
             to="/welcome"
-            target="_blank"
             title="GCC Sydney"
             tag={Link}>
             <img
               alt="logo"
               src={navbarColor===""? logoLight: logoDark}
               style={{
-                height: 160,
+                height: 64,
                 width: 160
               }}
             />
           </NavbarBrand>
 
-          {/* <NavbarBrand
-            data-placement="bottom"
-            to="/index"
-            target="_blank"
-            title="Coded by Creative Tim"
-            tag={Link}
-          >
-            GCC SYDNEY
-          </NavbarBrand> */}
           <button
             aria-expanded={navbarCollapse}
             className={classnames("navbar-toggler navbar-toggler", {
@@ -116,6 +106,11 @@ function ExamplesNavbar() {
         >
           <Nav navbar>
             <NavItem>
+              <NavLink to="/about" tag={Link}>
+                About
+              </NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink
                 data-placement="bottom"
                 href="https://www.instagram.com/gccsydney"
@@ -131,7 +126,7 @@ function ExamplesNavbar() {
                 data-placement="bottom"
                 href="https://www.youtube.com/gccsydney"
                 target="_blank"
-                title="Follow us on Twitter"
+                title="Follow us on Youtube"
               >
                 <i className="fa fa-youtube-play" />
                 <p className="d-lg-none">Youtube</p>
