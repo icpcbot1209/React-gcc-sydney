@@ -208,7 +208,8 @@ function LandingPage() {
             <Row>
               <Col className="ml-auto mr-auto" md="8">
                 <h2 className="text-center">Keep in touch?</h2>
-                <Form className="contact-form">
+
+                <Form className="contact-form" action="mailto:info@gccsydney.org" method="post" enctype="text/plain">
                   <Row>
                     <Col md="6">
                       <label>Name</label>
@@ -218,7 +219,7 @@ function LandingPage() {
                             <i className="nc-icon nc-single-02" />
                           </InputGroupText>
                         </InputGroupAddon>
-                        <Input placeholder="Name" type="text" />
+                        <Input placeholder="Name" type="text" name="name"/>
                       </InputGroup>
                     </Col>
                     <Col md="6">
@@ -229,19 +230,20 @@ function LandingPage() {
                             <i className="nc-icon nc-email-85" />
                           </InputGroupText>
                         </InputGroupAddon>
-                        <Input placeholder="Email" type="text" />
+                        <Input placeholder="Email" type="text" name="mail"/>
                       </InputGroup>
                     </Col>
                   </Row>
                   <label>Message</label>
                   <Input
+                    name="comment"
                     placeholder="Tell us your thoughts and feelings..."
                     type="textarea"
                     rows="4"
                   />
                   <Row>
                     <Col className="ml-auto mr-auto" md="4">
-                      <Button className="btn-fill" color="danger" size="lg">
+                      <Button className="btn-fill" color="danger" size="lg" type="submit" value="Send">
                         Send Message
                       </Button>
                     </Col>

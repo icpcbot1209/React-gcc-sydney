@@ -20,10 +20,13 @@ import React from "react";
 
 // reactstrap components
 import { Button, Container } from "reactstrap";
+import { VideoModal } from "views/modals/VideoModal";
 
 // core components
 
 function LandingPageHeader() {
+  const [videoModal, setVideoModal] = React.useState(false);
+
   let pageHeader = React.createRef();
 
   React.useEffect(() => {
@@ -57,11 +60,10 @@ function LandingPageHeader() {
             <h3>2022 Laying The Foundation 1 Corinthians 3:11</h3>
             <br />
             <Button
-              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
               className="btn-round mr-1"
               color="neutral"
-              target="_blank"
               outline
+              onClick={()=>setVideoModal(true)}
             >
               <i className="fa fa-play" />
               Watch video
@@ -69,6 +71,7 @@ function LandingPageHeader() {
           </div>
         </Container>
       </div>
+      <VideoModal isOpen={videoModal} toggleOpen={setVideoModal}/>
     </>
   );
 }
