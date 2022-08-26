@@ -68,7 +68,7 @@ function IndexNavbar() {
           <NavbarBrand
             data-placement="bottom"
             href="/index"
-            target="_blank"
+            target="_blank" rel="noreferrer"
             title="Coded by Creative Tim"
           >
             Paper Kit React
@@ -95,7 +95,7 @@ function IndexNavbar() {
               <NavLink
                 data-placement="bottom"
                 href="https://twitter.com/CreativeTim?ref=creativetim"
-                target="_blank"
+                target="_blank" rel="noreferrer"
                 title="Follow us on Twitter"
               >
                 <i className="fa fa-twitter" />
@@ -106,7 +106,7 @@ function IndexNavbar() {
               <NavLink
                 data-placement="bottom"
                 href="https://www.facebook.com/CreativeTim?ref=creativetim"
-                target="_blank"
+                target="_blank" rel="noreferrer"
                 title="Like us on Facebook"
               >
                 <i className="fa fa-facebook-square" />
@@ -117,7 +117,7 @@ function IndexNavbar() {
               <NavLink
                 data-placement="bottom"
                 href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
-                target="_blank"
+                target="_blank" rel="noreferrer"
                 title="Follow us on Instagram"
               >
                 <i className="fa fa-instagram" />
@@ -128,7 +128,7 @@ function IndexNavbar() {
               <NavLink
                 data-placement="bottom"
                 href="https://www.github.com/CreativeTimOfficial/paper-kit-react?ref=creativetim"
-                target="_blank"
+                target="_blank" rel="noreferrer"
                 title="Star on GitHub"
               >
                 <i className="fa fa-github" />
@@ -138,7 +138,7 @@ function IndexNavbar() {
             <NavItem>
               <NavLink
                 href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-index-navbar"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 <i className="nc-icon nc-book-bookmark" /> Documentation
               </NavLink>
@@ -148,7 +148,7 @@ function IndexNavbar() {
                 className="btn-round"
                 color="danger"
                 href="https://www.creative-tim.com/product/paper-kit-pro-react?ref=pkr-index-navbar"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 <i className="nc-icon nc-spaceship"></i> Upgrade to Pro
               </Button>

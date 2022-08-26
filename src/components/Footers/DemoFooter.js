@@ -35,14 +35,6 @@ function DemoFooter() {
               <li>
                   <i className="fa fa-envelope-o" /> info@gccsydney.org
               </li>
-              {/* <li>
-                <a
-                  href="https://www.creative-tim.com/license?ref=pkr-footer"
-                  target="_blank"
-                >
-                  Licenses
-                </a>
-              </li> */}
             </ul>
           </nav>
           <div className="credits ml-auto">
@@ -50,7 +42,8 @@ function DemoFooter() {
               © {new Date().getFullYear()}, made with{" "}
               <a
                 href="https://www.ouvall.com/"
-                target="_blank"
+                target="_blank" rel="noreferrer"
+                rel="noreferrer"
               >
                   Ouvall
               </a>

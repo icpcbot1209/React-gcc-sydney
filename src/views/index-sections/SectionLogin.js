@@ -120,7 +120,7 @@ function SectionLogin() {
                   color="neutral"
                   href="/register-page"
                   size="lg"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   View Register Page
                 </Button>

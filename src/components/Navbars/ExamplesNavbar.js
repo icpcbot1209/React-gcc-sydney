@@ -117,7 +117,7 @@ function ExamplesNavbar() {
               <NavLink
                 data-placement="bottom"
                 href="https://www.instagram.com/gccsydney"
-                target="_blank"
+                target="_blank" rel="noreferrer"
                 title="Follow us on Instagram"
               >
                 <i className="fa fa-instagram" />
@@ -128,7 +128,7 @@ function ExamplesNavbar() {
               <NavLink
                 data-placement="bottom"
                 href="https://www.youtube.com/gccsydney"
-                target="_blank"
+                target="_blank" rel="noreferrer"
                 title="Follow us on Youtube"
               >
                 <i className="fa fa-youtube-play" />
@@ -139,7 +139,7 @@ function ExamplesNavbar() {
               <NavLink
                 data-placement="bottom"
                 href="https://www.facebook.com/gccsydneyau"
-                target="_blank"
+                target="_blank" rel="noreferrer"
                 title="Like us on Facebook"
               >
                 <i className="fa fa-facebook" />
@@ -150,7 +150,7 @@ function ExamplesNavbar() {
               <NavLink
                 data-placement="bottom"
                 href="info@gccsydney.org"
-                target="_blank"
+                target="_blank" rel="noreferrer"
                 title="Send Email"
               >
                 <i className="fa fa-envelope-o" />

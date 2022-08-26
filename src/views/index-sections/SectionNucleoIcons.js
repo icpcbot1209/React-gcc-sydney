@@ -43,7 +43,7 @@ function SectionNucleoIcons() {
                 className="btn-round"
                 color="danger"
                 href="/nucleo-icons"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 View Demo Icons
               </Button>
@@ -52,7 +52,7 @@ function SectionNucleoIcons() {
                 color="danger"
                 href="https://nucleoapp.com/?ref=1712"
                 outline
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 View All Icons
               </Button>

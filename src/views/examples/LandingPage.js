@@ -100,7 +100,7 @@ function LandingPage() {
                       partnership with GCCNJ to further accomplish the Great Commission
                       to make disciples of all nations.
                     </p>
-                    <Button className="btn-link" target="_blank" color="info" href="https://gccnj.org/">
+                    <Button className="btn-link" target="_blank" rel="noreferrer" color="info" href="https://gccnj.org/">
                       See more
                     </Button>
                   </div>
@@ -118,7 +118,7 @@ function LandingPage() {
                       provide denominational guidance and wisdom as well as
                       accountability for the church.
                     </p>
-                    <Button className="btn-link" target="_blank" color="info" href="https://crcna.org/">
+                    <Button className="btn-link" target="_blank" rel="noreferrer" color="info" href="https://crcna.org/">
                       See more
                     </Button>
                   </div>

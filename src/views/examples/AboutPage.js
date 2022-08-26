@@ -104,7 +104,7 @@ const AboutPage = () => {
               ))}
 
               <div className="text-center">
-                Please visit <a href="https://www.crcna.org/" target="_blank">https://www.crcna.org/</a> for more information of what we believe and adhere to. 
+                Please visit <a href="https://www.crcna.org/" target="_blank" rel="noreferrer">https://www.crcna.org/</a> for more information of what we believe and adhere to. 
               </div>
             </Col>
           </Row>
