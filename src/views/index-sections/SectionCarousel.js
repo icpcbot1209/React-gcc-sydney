@@ -39,7 +39,7 @@ const items = [
     caption: "Somewhere"
   },
   {
-    src: require("assets/img/federico-beccari.jpg"),
+    src: require("assets/img/sydney-night-2.jpg"),
     altText: "Somewhere else",
     caption: "Somewhere else"
   },

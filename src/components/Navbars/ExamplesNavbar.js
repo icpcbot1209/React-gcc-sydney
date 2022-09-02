@@ -17,7 +17,7 @@
 
 */
 import React from "react";
-import { Link, useLocation, useHistory } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 // nodejs library that concatenates strings
 import classnames from "classnames";
 import logoLight from 'assets/gcc-horiz-light.svg';
@@ -40,7 +40,6 @@ function ExamplesNavbar() {
   const [giveModal, setGiveModal] = React.useState(false);
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
-  const history = useHistory();
   const { pathname, hash, key } = useLocation();
 
   React.useEffect(() => {
@@ -126,30 +125,30 @@ function ExamplesNavbar() {
         >
           <Nav navbar>
 
-            <div className="w3-dropdown-hover w3-transparent">
+            {/* <div className="w3-dropdown-hover w3-transparent"> */}
               <NavItem>
                 <NavLink to="/welcome" tag={Link}>
                   Home
                 </NavLink>
               </NavItem>
-              <div className="w3-dropdown-content w3-bar-block w3-black w3-text-white">
+              {/* <div className="w3-dropdown-content w3-bar-block w3-black w3-text-white">
                 <a href="/welcome/#meeting" className="w3-bar-item w3-button">Meeting Times</a>
                 <a href="/welcome/#connect" className="w3-bar-item w3-button">Connect</a>
               </div>
-            </div>
+            </div> */}
 
-            <div className="w3-dropdown-hover w3-transparent">
+            {/* <div className="w3-dropdown-hover w3-transparent"> */}
               <NavItem>
                 <NavLink to="/about" tag={Link}>
                   About
                 </NavLink>
               </NavItem>
-              <div className="w3-dropdown-content w3-bar-block w3-black w3-text-white">
+              {/* <div className="w3-dropdown-content w3-bar-block w3-black w3-text-white">
                 <NavLink to="/about#vision" tag={Link} className="w3-bar-item w3-button">Our Vision & Mission</NavLink>
                 <NavLink to="/about#story" tag={Link} className="w3-bar-item w3-button">Our Story</NavLink>
                 <NavLink to="/about#leadership" tag={Link} className="w3-bar-item w3-button">Leadership</NavLink>
               </div>
-            </div>
+            </div> */}
 
             <NavItem>
               <NavLink to="/believe" tag={Link}>

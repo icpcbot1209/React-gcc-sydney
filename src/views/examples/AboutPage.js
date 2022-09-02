@@ -81,7 +81,7 @@ const AboutPage = () => {
           </Row>
           
           <h4 className="title text-center" id="leadership">
-            Leardership
+            Leadership
           </h4>
 
           <Row>

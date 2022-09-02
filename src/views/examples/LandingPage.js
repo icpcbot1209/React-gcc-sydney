@@ -16,14 +16,10 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React, { useEffect } from "react";
+import React from "react";
 // reactstrap components
 import {
   Button,
-  Card,
-  CardBody,
-  CardFooter,
-  CardTitle,
   Form,
   Input,
   InputGroupAddon,
@@ -33,7 +29,7 @@ import {
   Row,
   Col,
 } from "reactstrap";
-import { useHistory, useLocation } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";

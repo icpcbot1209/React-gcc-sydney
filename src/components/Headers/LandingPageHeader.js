@@ -19,7 +19,7 @@
 import React from "react";
 
 // reactstrap components
-import { Button, Container } from "reactstrap";
+import { Container } from "reactstrap";
 // import { VideoModal } from "views/modals/VideoModal";
 
 // core components
@@ -47,7 +47,7 @@ function LandingPageHeader() {
     <>
       <div
         style={{
-          backgroundImage: "url(" + require("assets/img/daniel-olahh.jpg") + ")"
+          backgroundImage: "url(" + require("assets/img/sydney-night.jpg") + ")"
         }}
         className="page-header"
         data-parallax={true}

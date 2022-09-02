@@ -6,7 +6,6 @@ import {
   Col,
   Card,
   CardBody,
-  CardTitle
 } from "reactstrap";
 
 export const MeetingSection = () => {
