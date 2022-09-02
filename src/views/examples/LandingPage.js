@@ -105,49 +105,10 @@ function LandingPage() {
               </Col>
             </Row>
             <br />
-            <br />
-            {/* <Row>
-              <Col md="6">
-                <div className="info">
-                  <div className="icon icon-info">
-                    <i className="nc-icon nc-album-2" />
-                  </div>
-                  <div className="description">
-                    <h4 className="info-title">Grace Community Chapel of NJ</h4>
-                    <p className="description">
-                      GCCNJ is the sending church of GCC Sydney. We envision a continual
-                      partnership with GCCNJ to further accomplish the Great Commission
-                      to make disciples of all nations.
-                    </p>
-                    <Button className="btn-link" target="_blank" rel="noreferrer" color="info" href="https://gccnj.org/">
-                      See more
-                    </Button>
-                  </div>
-                </div>
-              </Col>
-              <Col md="6">
-                <div className="info">
-                  <div className="icon icon-info">
-                    <i className="nc-icon nc-bulb-63" />
-                  </div>
-                  <div className="description">
-                    <h4 className="info-title">Christian Reformed Church of North America</h4>
-                    <p>
-                      GCC Sydney is affiliated with the CRCNA denomination which will
-                      provide denominational guidance and wisdom as well as
-                      accountability for the church.
-                    </p>
-                    <Button className="btn-link" target="_blank" rel="noreferrer" color="info" href="https://crcna.org/">
-                      See more
-                    </Button>
-                  </div>
-                </div>
-              </Col>
-            </Row> */}
           </Container>
         </div>
 
-
+        <div id="meeting"></div>
         <MeetingSection />
 
         <div className="section landing-section">

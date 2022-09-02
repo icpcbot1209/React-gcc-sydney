@@ -127,6 +127,7 @@ function ExamplesNavbar() {
               </DropdownToggle>
               <DropdownMenu aria-labelledby="navbarDropdownMenuLink">
                 <DropdownItem
+                  to="/welcome#meeting"
                   onClick={e => e.preventDefault()}
                 >
                   Meeting Times
