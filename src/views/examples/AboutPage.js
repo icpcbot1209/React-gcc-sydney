@@ -35,7 +35,7 @@ const AboutPage = () => {
             />
           </div>
 
-          <h4 className="title text-center">
+          <h4 className="title text-center" id="vision">
             Our Vision & Mission
           </h4>
 
@@ -58,7 +58,7 @@ const AboutPage = () => {
             </Col>
           </Row>
 
-          <h4 className="title text-center">
+          <h4 className="title text-center" id="story">
             Our Story
           </h4>
 
@@ -80,7 +80,7 @@ const AboutPage = () => {
             </Col>
           </Row>
           
-          <h4 className="title text-center">
+          <h4 className="title text-center" id="leadership">
             Leardership
           </h4>
 

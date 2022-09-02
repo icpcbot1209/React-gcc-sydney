@@ -18,7 +18,7 @@ export const MeetingSection = () => {
     }
   };
   return (
-    <div className="section section-dark text-center" >
+    <div className="section section-dark text-center" id="meeting">
       <Container>
         <h2 className="title">Meeting Times</h2>
         <Row>

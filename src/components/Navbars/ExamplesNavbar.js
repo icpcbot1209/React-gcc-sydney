@@ -25,11 +25,6 @@ import logoDark from 'assets/gcc-horiz-dark.svg';
 
 // reactstrap components
 import {
-  UncontrolledCollapse,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
   Collapse,
   NavbarBrand,
   Navbar,
@@ -46,6 +41,22 @@ function ExamplesNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
   const history = useHistory();
+  const { pathname, hash, key } = useLocation();
+
+  React.useEffect(() => {
+    if (hash === '') {
+    }
+    else {
+      setTimeout(() => {
+        const id = hash.replace('#', '');
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({behavior: 'smooth'});
+        }
+      }, 300);
+    }
+  }, [pathname, hash, key]); // do this on route change
+
 
   const toggleNavbarCollapse = () => {
     setNavbarCollapse(!navbarCollapse);
@@ -114,49 +125,37 @@ function ExamplesNavbar() {
           isOpen={navbarCollapse}
         >
           <Nav navbar>
-            <UncontrolledDropdown nav>
-              <DropdownToggle
-                aria-haspopup={true}
-                caret
-                color="default"
-                data-toggle="dropdown"
-                nav
-                onClick={e => e.preventDefault()}
-              >
-                Home
-              </DropdownToggle>
-              <DropdownMenu aria-labelledby="navbarDropdownMenuLink">
-                <DropdownItem
-                  to="/welcome#meeting"
-                  onClick={e => e.preventDefault()}
-                >
-                  Meeting Times
-                </DropdownItem>
-                <DropdownItem
-                  href="#pablo"
-                  onClick={e => e.preventDefault()}
-                >
-                  Connect
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
 
+            <div className="w3-dropdown-hover w3-transparent">
+              <NavItem>
+                <NavLink to="/welcome" tag={Link}>
+                  Home
+                </NavLink>
+              </NavItem>
+              <div className="w3-dropdown-content w3-bar-block w3-black w3-text-white">
+                <a href="/welcome/#meeting" className="w3-bar-item w3-button">Meeting Times</a>
+                <a href="/welcome/#connect" className="w3-bar-item w3-button">Connect</a>
+              </div>
+            </div>
 
+            <div className="w3-dropdown-hover w3-transparent">
+              <NavItem>
+                <NavLink to="/about" tag={Link}>
+                  About
+                </NavLink>
+              </NavItem>
+              <div className="w3-dropdown-content w3-bar-block w3-black w3-text-white">
+                <NavLink to="/about#vision" tag={Link} className="w3-bar-item w3-button">Our Vision & Mission</NavLink>
+                <NavLink to="/about#story" tag={Link} className="w3-bar-item w3-button">Our Story</NavLink>
+                <NavLink to="/about#leadership" tag={Link} className="w3-bar-item w3-button">Leadership</NavLink>
+              </div>
+            </div>
 
-            <NavItem>
-              <NavLink to="/about" tag={Link}>
-                About
-              </NavLink>
-            </NavItem>  
             <NavItem>
               <NavLink to="/believe" tag={Link}>
                 What We Believe
               </NavLink>
             </NavItem>
-
-
-
-
 
             <NavItem>
               <NavLink
@@ -208,18 +207,14 @@ function ExamplesNavbar() {
                 color="danger"
                 onClick={()=>setGiveModal(true)}
               >
-                <i className="nc-icon nc-spaceship"></i> GIVE
+                <i className="nc-icon nc-bank"></i> GIVE
               </Button>
             </NavItem>
-
-
           </Nav>
-
         </Collapse>
       </Container>
       <GiveModal isOpen={giveModal} toggleOpen={setGiveModal}/>
     </Navbar>
-
   );
 }
 

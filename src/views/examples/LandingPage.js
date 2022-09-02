@@ -43,7 +43,6 @@ import { MeetingSection } from "./MeetingSection";
 
 function LandingPage() {
   const history = useHistory();
-  const { pathname, hash, key } = useLocation();
 
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
@@ -52,20 +51,6 @@ function LandingPage() {
       document.body.classList.remove("profile-page");
     };
   });
-
-  useEffect(() => {
-    if (hash === '') {
-    }
-    else {
-      setTimeout(() => {
-        const id = hash.replace('#', '');
-        const element = document.getElementById(id);
-        if (element) {
-          element.scrollIntoView({behavior: 'smooth'});
-        }
-      }, 300);
-    }
-  }, [pathname, hash, key]); // do this on route change
 
 
   const gotoUrl = (url) => {
@@ -101,16 +86,18 @@ function LandingPage() {
 
                 <div className="mb-4"></div>
                 
-                <iframe width="100%" height="540" src="https://www.youtube.com/embed/-SogHtGbuog?autoplay=2&amp;&amp;rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+                <div style={{height: 550}}>
+                  <iframe width="100%" height="540" src="https://www.youtube.com/embed/-SogHtGbuog?autoplay=2&amp;&amp;rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+                </div>
               </Col>
             </Row>
             <br />
           </Container>
         </div>
 
-        <div id="meeting"></div>
         <MeetingSection />
 
+        <div id="connect"></div>
         <div className="section landing-section">
           <Container>
             <Row>
