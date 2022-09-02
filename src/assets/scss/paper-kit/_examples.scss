@@ -119,14 +119,25 @@
 .profile-content{
     position: relative;
 }
+
+.section-img{
+    margin: -185px auto 0;
+    display: inline-block;
+}
+
 .owner{
     text-align: center;
 }
 .owner .avatar{
     padding: 15px;
-    margin: -185px auto 0;
+    margin: 0 auto 0;
     display: inline-block;
 }
+
+.owner .avatar img {
+    width: 12em;
+}
+
 .owner .name h4{
     margin-top: 10px;
 }

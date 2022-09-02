@@ -26,16 +26,37 @@ const AboutPage = () => {
       <ProfilePageHeader />
       <div className="section profile-content">
         <Container>
-          <div className="owner">
-            <div className="avatar">
-              <img
-                alt="..."
-                style={{maxWidth: '100%'}}
-                className="img-rounded img-responsive"
-                src={require("assets/img/our_story.jpg")}
-              />
-            </div>
+          <div style={{textAlign: 'center'}}>
+            <img
+              alt="..."
+              style={{maxWidth: '100%'}}
+              className="img-rounded img-responsive section-img"
+              src={require("assets/img/our_story.jpg")}
+            />
           </div>
+
+          <h4 className="title text-center">
+            Our Vision & Mission
+          </h4>
+
+          <Row>
+            <Col className="ml-auto mr-auto text-justify" md="8">
+              <p>
+                Grace Community Chapel exists is to raise radical disciples of Jesus
+                Christ that will be released into our communities and the world to
+                make a great impact for the Kingdom of God.
+              </p>
+              <br/>
+              <p>
+                GCC’s vision to make radical disciples will be accomplished
+                by faithfully teaching and preaching the Word of God,
+                building an authentic and gospel-centered community,
+                and by exercising our gifts and talents to reach our
+                communities and the world through local outreach and
+                global missions.
+              </p>
+            </Col>
+          </Row>
 
           <h4 className="title text-center">
             Our Story
@@ -60,36 +81,52 @@ const AboutPage = () => {
           </Row>
           
           <h4 className="title text-center">
-            Our Vision
+            Leardership
           </h4>
 
           <Row>
             <Col className="ml-auto mr-auto text-justify" md="8">
+              <div className="owner">
+                <div className="avatar">
+                  <img
+                    alt="..."
+                    className="img-circle img-no-padding img-responsive"
+                    src={require("assets/img/paul_nam.png")}
+                  />
+                </div>
+                <div className="name">
+                  <h4 className="title">
+                    Rev. Paul Nam <br />
+                  </h4>
+                </div>
+              </div>
               <p>
-                Grace Community Chapel exists is to raise radical disciples of Jesus
-                Christ that will be released into our communities and the world to
-                make a great impact for the Kingdom of God.
+                Pastor Paul Nam is the founder and Lead Pastor of Grace Community
+                Chapel Sydney. Pastor Paul is a graduate of The George Washington
+                University (B.A.) and The Southwestern Baptist Theological
+                Seminary (M.Div).
               </p>
+              <p>
+                He is currently pursuing a Doctorate of Ministry in Discipleship from Talbot School of Theology. 
+              </p>
+              <p>
+                He also holds a Foundations of Biblical Counseling Certificate from Christian Counseling &amp; Educational Foundation (CCEF).
+              </p> 
+              <p>He is ordained in the Christian Reformed Church of North America (CRCNA).</p>  
+              <p>
+                Pastor Paul has served in ministry for the past 15 years and most
+                recently served as an associate pastor at Grace Community Chapel
+                of NJ for the past 9 years.
+              </p>
+              <p>
+                His greatest passion is for the church
+                to raise bold, committed, and passionate disciples of Jesus Christ
+                that will make a great impact for the Kingdom of God.
+              </p>  
+              <p>His heart is for people to fall into a deep, love relationship with Jesus.</p>
+              <p>Pastor Paul is a devoted husband to Deborah, and a grateful father to Karis, Kayla, Moses, and Matthew.</p>
             </Col>
           </Row>
-
-          <h4 className="title text-center">
-            Our Mission
-          </h4>
-
-          <Row>
-            <Col className="ml-auto mr-auto text-justify" md="8">
-              <p>
-                GCC’s vision to make radical disciples will be accomplished
-                by faithfully teaching and preaching the Word of God,
-                building an authentic and gospel-centered community,
-                and by exercising our gifts and talents to reach our
-                communities and the world through local outreach and
-                global missions.
-              </p>
-            </Col>
-          </Row>
-
         </Container>
       </div>
       <DemoFooter />

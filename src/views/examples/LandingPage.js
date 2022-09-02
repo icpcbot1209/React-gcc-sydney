@@ -91,18 +91,22 @@ function LandingPage() {
                 </h5>
                 <br />
 
-                    <Button
-                      className="btn-round"
-                      color="info"
-                      onClick={(e)=>gotoUrl('/about')}
-                    >
-                      See Details
-                    </Button>
+                <Button
+                  className="btn-round mb-4"
+                  color="info"
+                  onClick={(e)=>gotoUrl('/about')}
+                >
+                  See Details
+                </Button>
+
+                <div className="mb-4"></div>
+                
+                <iframe width="100%" height="540" src="https://www.youtube.com/embed/-SogHtGbuog?autoplay=2&amp;&amp;rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
               </Col>
             </Row>
             <br />
             <br />
-            <Row>
+            {/* <Row>
               <Col md="6">
                 <div className="info">
                   <div className="icon icon-info">
@@ -139,83 +143,10 @@ function LandingPage() {
                   </div>
                 </div>
               </Col>
-            </Row>
+            </Row> */}
           </Container>
         </div>
-        <div id="leadership" name='leadership' style={{height: 100}}></div>
-        <div className="section section-dark text-center" >
-          <Container>
-            <h2 className="title">LEADERSHIP</h2>
-            <Row>
-              <Col md="12">
-                <Card className="card-profile card-plain">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={require("assets/img/paul_nam.png")}
-                      />
-                    </a>
-                  </div>
-                  <CardBody>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <div className="author">
-                        <CardTitle tag="h4">Rev. Paul Nam</CardTitle>
-                        <h6 className="card-category">Leader</h6>
-                      </div>
-                    </a>
-                    <p className="card-description text-center">
-                      Pastor Paul Nam is the founder and Lead Pastor of Grace Community
-                      Chapel Sydney. Pastor Paul is a graduate of The George Washington
-                      University (B.A.) and The Southwestern Baptist Theological
-                      Seminary (M.Div). He is currently pursuing a Doctorate of Ministry
-                      in Discipleship from Talbot School of Theology. He also holds a
-                      Foundations of Biblical Counseling Certificate from Christian
-                      Counseling &amp; Educational Foundation (CCEF). He is ordained in
-                      the Christian Reformed Church of North America (CRCNA). Pastor
-                      Paul has served in ministry for the past 15 years and most
-                      recently served as an associate pastor at Grace Community Chapel
-                      of NJ for the past 9 years. His greatest passion is for the church
-                      to raise bold, committed, and passionate disciples of Jesus Christ
-                      that will make a great impact for the Kingdom of God. His heart is
-                      for people to fall into a deep, love relationship with Jesus.
-                      Pastor Paul is a devoted husband to Deborah, and a grateful father
-                      to Karis, Kayla, Moses, and Matthew. He loves to eat, work out,
-                      and enjoys to play and watch sports. He looks forward to learning
-                      rugby, and picking up the Australian accent.
-                    </p>
-                  </CardBody>
-                  {/* <CardFooter className="text-center">
-                    <Button
-                      className="btn-just-icon btn-neutral"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-google-plus" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                  </CardFooter> */}
-                </Card>
-              </Col>
-            </Row>
-          </Container>
-        </div>
+
 
         <MeetingSection />
 
@@ -223,7 +154,7 @@ function LandingPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
-                <h2 className="text-center">Keep in touch?</h2>
+                <h2 className="text-center">Connect with us</h2>
 
                 <Form className="contact-form" action="mailto:info@gccsydney.org" method="post" encType="text/plain">
                   <Row>

@@ -25,6 +25,11 @@ import logoDark from 'assets/gcc-horiz-dark.svg';
 
 // reactstrap components
 import {
+  UncontrolledCollapse,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown,
   Collapse,
   NavbarBrand,
   Navbar,
@@ -109,7 +114,35 @@ function ExamplesNavbar() {
           isOpen={navbarCollapse}
         >
           <Nav navbar>
-          <NavItem>
+            <UncontrolledDropdown nav>
+              <DropdownToggle
+                aria-haspopup={true}
+                caret
+                color="default"
+                data-toggle="dropdown"
+                nav
+                onClick={e => e.preventDefault()}
+              >
+                Home
+              </DropdownToggle>
+              <DropdownMenu aria-labelledby="navbarDropdownMenuLink">
+                <DropdownItem
+                  onClick={e => e.preventDefault()}
+                >
+                  Meeting Times
+                </DropdownItem>
+                <DropdownItem
+                  href="#pablo"
+                  onClick={e => e.preventDefault()}
+                >
+                  Connect
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+
+
+
+            <NavItem>
               <NavLink to="/about" tag={Link}>
                 About
               </NavLink>
@@ -119,12 +152,11 @@ function ExamplesNavbar() {
                 What We Believe
               </NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink to="/welcome#leadership" tag={Link}>
-                Leadership
-              </NavLink>
-            </NavItem>
-            
+
+
+
+
+
             <NavItem>
               <NavLink
                 data-placement="bottom"
@@ -178,11 +210,15 @@ function ExamplesNavbar() {
                 <i className="nc-icon nc-spaceship"></i> GIVE
               </Button>
             </NavItem>
+
+
           </Nav>
+
         </Collapse>
       </Container>
       <GiveModal isOpen={giveModal} toggleOpen={setGiveModal}/>
     </Navbar>
+
   );
 }
 

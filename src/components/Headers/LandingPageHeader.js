@@ -20,12 +20,12 @@ import React from "react";
 
 // reactstrap components
 import { Button, Container } from "reactstrap";
-import { VideoModal } from "views/modals/VideoModal";
+// import { VideoModal } from "views/modals/VideoModal";
 
 // core components
 
 function LandingPageHeader() {
-  const [videoModal, setVideoModal] = React.useState(false);
+  // const [videoModal, setVideoModal] = React.useState(false);
 
   let pageHeader = React.createRef();
 
@@ -56,22 +56,11 @@ function LandingPageHeader() {
         <div className="filter" />
         <Container>
           <div className="motto text-center">
-            <h1>Grace Community Chapel Sydney</h1>
-            <h3>2022 Laying The Foundation 1 Corinthians 3:11</h3>
-            <br />
-            <Button
-              className="btn-round mr-1"
-              color="neutral"
-              outline
-              onClick={()=>setVideoModal(true)}
-            >
-              <i className="fa fa-play" />
-              Watch video
-            </Button>
+            <h1>LAYING THE FOUNDATION</h1>
+            <h3>1 Corinthians 3:11</h3>
           </div>
         </Container>
       </div>
-      <VideoModal isOpen={videoModal} toggleOpen={setVideoModal}/>
     </>
   );
 }

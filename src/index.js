@@ -8,6 +8,7 @@ import "assets/scss/paper-kit.scss?v=1.3.0";
 import "assets/demo/demo.css?v=1.3.0";
 // pages
 import LandingPage from "views/examples/LandingPage.js";
+import ProfilePage from "views/examples/ProfilePage";
 import AboutPage from "views/examples/AboutPage";
 import BelievePage from "views/examples/BelievePage";
 import ScrollToTop from "ScrollToTop";
@@ -23,6 +24,11 @@ root.render(
         render={(props) => <LandingPage {...props} />}
       />
       
+      <Route
+        path="/leader"
+        render={(props) => <ProfilePage {...props} />}
+      />
+
       <Route
         path="/about"
         render={(props) => <AboutPage {...props} />}
