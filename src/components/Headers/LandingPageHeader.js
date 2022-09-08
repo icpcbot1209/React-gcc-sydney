@@ -56,8 +56,8 @@ function LandingPageHeader() {
         <div className="filter" />
         <Container>
           <div className="motto text-center">
-            <h1>LAYING THE FOUNDATION</h1>
-            <h3>1 Corinthians 3:11</h3>
+            <h1>Grace Community Chapel Sydney</h1>
+            {/* <h3>1 Corinthians 3:11</h3> */}
           </div>
         </Container>
       </div>

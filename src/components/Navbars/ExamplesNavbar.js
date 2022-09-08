@@ -151,6 +151,12 @@ function ExamplesNavbar() {
             </div> */}
 
             <NavItem>
+              <NavLink to="/leader" tag={Link}>
+                Leadership
+              </NavLink>
+            </NavItem>
+            
+            <NavItem>
               <NavLink to="/believe" tag={Link}>
                 What We Believe
               </NavLink>

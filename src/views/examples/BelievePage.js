@@ -39,15 +39,16 @@ const BelievePage = () => {
       <ProfilePageHeader />
       <div className="section profile-content">
         <Container>
-          <h4 className="title text-center">
+          {/* <h4 className="title text-center">
             What We Believe
-          </h4>
+          </h4> */}
+          <div className="mt-4"></div>
 
           <Row>
             <Col className="ml-auto mr-auto text-justify" md="8">
               {arrBelieve.map((item, k)=>(
                 <div key={k}>
-                  <h6 className="description text-center">{item.title}</h6>
+                  <h5 className="text-center" style={{fontWeight: 'bold' }}>{item.title}</h5>
                   <p>{item.content}</p>
                   <p>{item.where}</p>
                   <br/>                

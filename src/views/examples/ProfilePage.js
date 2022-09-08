@@ -73,23 +73,22 @@ function ProfilePage() {
                 Pastor Paul Nam is the founder and Lead Pastor of Grace Community
                 Chapel Sydney. Pastor Paul is a graduate of The George Washington
                 University (B.A.) and The Southwestern Baptist Theological
-                Seminary (M.Div). He is currently pursuing a Doctorate of Ministry
-                in Discipleship from Talbot School of Theology. He also holds a
-                Foundations of Biblical Counseling Certificate from Christian
-                Counseling &amp; Educational Foundation (CCEF). He is ordained in
-                the Christian Reformed Church of North America (CRCNA). Pastor
-                Paul has served in ministry for the past 15 years and most
-                recently served as an associate pastor at Grace Community Chapel
-                of NJ for the past 9 years. His greatest passion is for the church
-                to raise bold, committed, and passionate disciples of Jesus Christ
-                that will make a great impact for the Kingdom of God. His heart is
-                for people to fall into a deep, love relationship with Jesus.
-                Pastor Paul is a devoted husband to Deborah, and a grateful father
-                to Karis, Kayla, Moses, and Matthew.
-                {/* He loves to eat, work out,
-                and enjoys to play and watch sports. He looks forward to learning
-                rugby, and picking up the Australian accent. */}
+                Seminary (M.Div).
               </p>
+              <p>
+                He is currently pursuing a Doctorate of Ministry in Discipleship from Talbot School of Theology. 
+              </p>
+              <p>
+                He also holds a Foundations of Biblical Counseling Certificate from Christian Counseling &amp; Educational Foundation (CCEF).
+              </p> 
+              <p>He is ordained in the Christian Reformed Church of North America (CRCNA).</p>  
+              <p>
+                His greatest passion is for the church
+                to raise bold, committed, and passionate disciples of Jesus Christ
+                that will make a great impact for the Kingdom of God.
+              </p>  
+              <p>His heart is for people to fall into a deep, love relationship with Jesus.</p>
+              <p>Pastor Paul is a devoted husband to Deborah, and a grateful father to Karis, Kayla, Moses, and Matthew.</p>
             </Col>
           </Row>
         </Container>
