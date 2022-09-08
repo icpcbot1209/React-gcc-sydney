@@ -52,6 +52,10 @@ function ProfilePage() {
       <ProfilePageHeader />
       <div className="section profile-content">
         <Container>
+          <div className="text-center"  style={{position: 'absolute', top: -200, left: 0, right: 0, color: 'white'}}>
+            <h2>Leadership</h2>
+          </div>
+
           <div className="owner">
             <div className="avatar">
               <img

@@ -39,9 +39,10 @@ const BelievePage = () => {
       <ProfilePageHeader />
       <div className="section profile-content">
         <Container>
-          {/* <h4 className="title text-center">
-            What We Believe
-          </h4> */}
+          <div className="text-center"  style={{position: 'absolute', top: -200, left: 0, right: 0, color: 'white'}}>
+            <h2>What We Believe</h2>
+          </div>
+
           <div className="mt-4"></div>
 
           <Row>
