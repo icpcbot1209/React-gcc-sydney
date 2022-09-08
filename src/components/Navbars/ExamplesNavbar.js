@@ -158,7 +158,7 @@ function ExamplesNavbar() {
             
             <NavItem>
               <NavLink to="/believe" tag={Link}>
-                What We Believe
+                We Believe
               </NavLink>
             </NavItem>
 
