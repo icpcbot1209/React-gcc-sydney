@@ -1,12 +1,6 @@
-import React from 'react'
+import React from "react";
 // reactstrap components
-import {
-  Container,
-  Row,
-  Col,
-  Card,
-  CardBody,
-} from "reactstrap";
+import { Container, Row, Col, Card, CardBody } from "reactstrap";
 
 export const MeetingSection = () => {
   const [activeTab, setActiveTab] = React.useState("1");
@@ -16,6 +10,9 @@ export const MeetingSection = () => {
       setActiveTab(tab);
     }
   };
+
+  const address = "27 Iron St, North Parramatta, NSW 2151";
+
   return (
     <div className="section section-dark text-center" id="meeting">
       <Container>
@@ -25,19 +22,19 @@ export const MeetingSection = () => {
             <Card className="card-plain">
               <CardBody>
                 <div className="card-description text-center">
-                    <h4>Sunday Worship</h4>
-                    <p>Sundays - 4pm</p>
-                    <p>Shuttle pick up at Lidcombe Station</p>
-                    <p>56-60 Parramatta Rd, Lidcombe NSW 2141 2nd Floor</p>
-                    <p>info@gccsydney.org</p>
-                    <hr />
-                    <h4>Prayer Meetings</h4>
-                    <p>EMP (Tuesday-Saturday) - 7am</p>
-                    <p>TNP (Tuesdays) - 7:30pm</p>
-                    <p>56-60 Parramatta Rd, Lidcombe NSW 2141 2nd Floor</p>
-                    <hr />
-                    <h4>Life Groups</h4>
-                    <p>Various Times and Locations</p>
+                  <h4>Sunday Worship</h4>
+                  <p>Sundays - 11am</p>
+                  <p>Shuttle pick up at Lidcombe Station</p>
+                  <p>{address}</p>
+                  <p>info@gccsydney.org</p>
+                  <hr />
+                  <h4>Prayer Meetings</h4>
+                  <p>EMP (Tuesday-Saturday) - 7am</p>
+                  <p>TNP (Tuesdays) - 7:30pm</p>
+                  <p>{address}</p>
+                  <hr />
+                  <h4>Life Groups</h4>
+                  <p>Various Times and Locations</p>
                 </div>
               </CardBody>
             </Card>
@@ -45,5 +42,5 @@ export const MeetingSection = () => {
         </Row>
       </Container>
     </div>
-  )
-}
+  );
+};
