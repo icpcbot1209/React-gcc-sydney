@@ -24,7 +24,7 @@ export const MeetingSection = () => {
                 <div className="card-description text-center">
                   <h4>Sunday Worship</h4>
                   <p>Sundays - 11am</p>
-                  <p>Shuttle pick up at Lidcombe Station</p>
+                  <p>Rides from Parramatta Station available</p>
                   <p>{address}</p>
                   <p>info@gccsydney.org</p>
                   <hr />
